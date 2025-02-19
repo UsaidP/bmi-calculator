@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="main-heading">BMI Calculator</h1>
+      <div id="bmi-form">
+        <h2 id="age">Age <input type="text" placeholder="Enter Your Age" /></h2>
+        <div>
+          <h2>
+            Gender
+            <label>
+              <input type="radio" name="gender" id="gender" value="Male" />
+              Male
+            </label>
+            <label>
+              <input type="radio" name="gender" id="gender" value="Female" />
+              Female
+            </label>
+          </h2>
+        </div>
+        <div>
+          <h2>
+            Height
+            <input
+              type="number"
+              name="feet"
+              id="height-feet"
+              placeholder="Feet"
+              required
+            />
+
+            <input
+              type="number"
+              name="inches"
+              id="height-inches"
+              placeholder="Inches"
+              required
+            />
+          </h2>
+        </div>
+        <div>
+          <h2>
+            Weight
+            <input
+              type="number"
+              name="weight"
+              id="weight"
+              placeholder="Enter Your Weight"
+              required
+            />
+          </h2>
+        </div>
+        <div class="btns">
+          <button id="calculate">Calculate</button>
+          <button id="clear">Clear</button>
+        </div>
+        <div id="result">
+          <p id="resul-heading"></p>
+          <p id="result-p">Please Enter your details<br /></p>
+          <p id="bmi-category"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
